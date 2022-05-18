@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="app">
       <h1>build a linkedIn clone</h1>
+      
     </div>
   );
 }

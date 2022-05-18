@@ -13,7 +13,7 @@
 }
 
 .header__right {
-    
+
 }
 
 .header__search {
@@ -23,6 +23,7 @@
     border-radius: 5px;
     height: 22px;
     color: gray;
+    background-color: #eef3f8;
 }
 
 .header__search > input {

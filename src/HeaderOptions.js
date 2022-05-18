@@ -1,8 +1,11 @@
 import React from 'react'
+import './HeaderOptions.css'
 
-function HeaderOptions() {
+function HeaderOptions({ title, Icon }) {
   return (
-    <div>HeaderOptions</div>
+    <div className='headerOption'>
+        
+    </div>
   )
 }
 

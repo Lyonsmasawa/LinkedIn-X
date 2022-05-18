@@ -1,9 +1,14 @@
 .headerOption{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    color: gray;
 }
 
 .headerOption__icon{
-
+    
 }
 
 .headerOption__title{

@@ -1,0 +1,20 @@
+.header{
+
+}
+
+.header__left{
+
+}
+
+.header__left > img {
+    object-fit: contain;
+    height: 40px;
+    
+}
+.header__right {
+
+}
+
+.header__search {
+
+}

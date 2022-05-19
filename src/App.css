@@ -6,4 +6,6 @@
 }
 .app__body {
     display: flex;
+    justify-content: space-around;
+    width: 100%;
 }

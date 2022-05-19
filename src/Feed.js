@@ -4,6 +4,7 @@ import InputOption from './InputOption'
 import Post from './Post'
 import { useEffect, useState } from 'react'
 import { db } from './firebase'
+import firebase from 'firebase/compat/app'
 
 function Feed() {
     const [posts, setPosts] = useState([]);
@@ -24,7 +25,9 @@ function Feed() {
         db.collection('posts').add({
             name: 'Lyons Masawa',
             description: 'this is a test',
-            // message: ,
+            message: input,
+            photoUrl: '',
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         })
     }
 

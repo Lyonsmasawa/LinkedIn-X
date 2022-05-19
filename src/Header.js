@@ -36,8 +36,7 @@ function Header() {
             <HeaderOptions title="Jobs" Icon={BusinessCenterIcon}/>
             <HeaderOptions title="Messaging" Icon={ChatIcon}/>
             <HeaderOptions title="Notifications" Icon={NotificationsIcon}/>
-            <HeaderOptions onClick={logoutOfApp} avatar={"https://i.scdn.co/image/ab6775700000ee85b254071f06759aa4a4f6398b"}
-             title={user?.displayName}/>
+            <HeaderOptions onClick={logoutOfApp} avatar={true} title={user?.displayName}/>
         </div>
     </div>
   )

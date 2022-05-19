@@ -11,9 +11,9 @@ function Post(props) {
                 <h2>{props.name}</h2>
                 <p>{props.description}</p>
             </div>
-            <div className="post__body">
-                <p>{props.message}</p>
-            </div>
+        </div>
+        <div className="post__body">
+            <p>{props.message}</p>
         </div>
     </div>
   )

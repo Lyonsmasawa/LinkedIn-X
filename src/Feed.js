@@ -7,7 +7,7 @@ import { db } from './firebase'
 
 function Feed() {
     const [posts, setPosts] = useState([]);
-    const [input, setInput] = useState('')
+    const [input, setInput] = useState('fff')
 
     useEffect(() => {
         db.collection("posts").onSnapshot(snapshot => {
@@ -34,7 +34,7 @@ function Feed() {
                 <div className="feed__input">
                     <Create />
                     <form action="">
-                        <input type="text"  />
+                        <input type="text" value={input} onChange={e => setInput(e.target.value)} />
                         <button type='submit' onClick={sendPost}>Send</button>
                     </form>
                 </div>

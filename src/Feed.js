@@ -2,8 +2,11 @@ import './Feed.css'
 import { CalendarViewDay, Create, Image, Subscriptions, EventNote } from '@material-ui/icons'
 import InputOption from './InputOption'
 import Post from './Post'
+import { useState } from 'react'
 
 function Feed() {
+    const [posts, setPosts] = useState([])
+
     return (
         <div className="feed">
             <div className="feed__inputContainer">

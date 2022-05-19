@@ -8,7 +8,7 @@ function Post(props) {
   return (
     <div className='post'>
         <div className="post__header">
-            <Avatar />
+            <Avatar src={props.photoURL}>{props.name[0]}</Avatar>
             <div className="post__info">
                 <h2>{props.name}</h2>
                 <p>{props.description}</p>

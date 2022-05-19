@@ -50,16 +50,22 @@ function Login() {
         <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c528.png" alt="" />
 
         <form action="">
+            <p><strong>Enter Email and Password to sign in</strong></p>
+            <p> - </p>
             <input type="text" placeholder='Full name (required if registering)' value={name} onChange={e => setName(e.target.value)} />
             <input type="text" placeholder='Profile picture (optional)' value={profile} onChange={e => setProfile(e.target.value)} />
             <input type="email" placeholder='Email' value={email} onChange={e => setEmail(e.target.value)}/>
             <input type="password" placeholder='Password' value={password} onChange={e => setPassword(e.target.value)}/>
             <button type='submit' onClick={loginToApp}>Sign in</button>
+            <br />
+
+            <p>-</p>
+            <p><strong>Enter full details to register an account</strong></p>
+            <span> Not a member? 
+                <span className='login__register' onClick={register}> Register now</span>
+            </span>
         </form>
 
-        <p>Not a member? 
-            <span className='login__register' onClick={register}> Register now</span>
-        </p>
     </div>
   )
 }

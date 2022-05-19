@@ -6,6 +6,7 @@
 }
 .app__body {
     display: flex;
+    margin-top: 5px;
     justify-content: space-evenly;
     width: 100%;
 }

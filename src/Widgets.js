@@ -3,7 +3,7 @@ import './Widgets.css'
 
 function Widgets() {
   return (
-    <div>Widgets</div>
+    <div className='widget'>Widgets</div>
   )
 }
 

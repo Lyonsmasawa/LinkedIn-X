@@ -11,6 +11,15 @@
     margin-bottom: 10px;
 }
 
+.sidebar__top > h2{
+    font-size: 18px;
+}
+
+.sidebar__top > h4{
+    color: gray;
+    font-size: 12px;
+}
+
 .sidebar__top {
     display: flex;
     flex-direction: column;

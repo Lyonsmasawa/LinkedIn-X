@@ -1,9 +1,10 @@
 import './InputOption.css'
 
-function InputOption() {
+function InputOption({Icon, title}) {
     return (
         <div className="inputOption">
-
+            {Icon && <Icon />}
+            <h4>{ title }</h4>
         </div>
     )
 }

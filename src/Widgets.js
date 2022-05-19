@@ -21,11 +21,11 @@ function Widgets() {
             <h2>LinkedIn News</h2>
             <Info />
         </div>
-        {newsArticle("This is the stuff", " better beleive it")}
-        {newsArticle("This is the stuff", " better beleive it")}
-        {newsArticle("This is the stuff", " better beleive it")}
-        {newsArticle("This is the stuff", " better beleive it")}
-        {newsArticle("This is the stuff", " better beleive it")}
+        {newsArticle("OnePlus Nord", " OnePlus Nord 2T review: minor improvements to a masterful midranger")}
+        {newsArticle("Samsung", " Samsung will charge $500 to put your face on its fridge")}
+        {newsArticle("Boeing", " Boeing’s third launch attempt nears for embattled Starliner spacecraft")}
+        {newsArticle("MacBook", " Anker says its new USB-C hub lets M1 MacBooks output to three external monitors")}
+        {newsArticle("Modular Gadgets", " Framework’s new laptop means the promise of modular gadgets might be coming true")}
     </div>
   )
 }

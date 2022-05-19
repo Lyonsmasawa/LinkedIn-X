@@ -12,7 +12,17 @@ function Login() {
         e.preventDefault();
     }
     const register = () => {
-        
+        if (!name) {
+            return alert("please enter a full name")   
+        }
+
+        auth.createUserWithEmailAndPassword(email, password)
+        .then((userAuth) => {
+            userAuth.user.updateProfile({
+                displayName: name,
+                photoURL: profile,
+            })
+        })
     }
 
   return (

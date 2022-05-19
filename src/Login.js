@@ -14,7 +14,7 @@ function Login() {
     const loginToApp = (e) => {
         e.preventDefault();
     }
-    
+
     const register = () => {
         if (!name) {
             return alert("please enter a full name")   
@@ -33,7 +33,7 @@ function Login() {
                     photoUrl: profile,
                 }))
             })
-        })
+        }).catch(error => alert(error.message))
     }
 
   return (

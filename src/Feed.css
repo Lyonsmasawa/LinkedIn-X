@@ -5,6 +5,7 @@
 
 .feed__inputContainer {
     display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 10px;
     padding-bottom: 20px;

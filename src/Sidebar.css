@@ -32,6 +32,20 @@
     object-fit: cover;
 }
 
-.sidebar__stats {}
+.sidebar__stat {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__stat>p {
+    color: gray;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sidebar__statNumber{
+    font-weight: 700;
+}
 
 .sidebar__bottom {}

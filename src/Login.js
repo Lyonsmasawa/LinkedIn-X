@@ -3,7 +3,7 @@ import './Login.css'
 
 function Login() {
     const loginToApp = () => {
-        
+
     }
     const register = () => {}
 
@@ -19,8 +19,8 @@ function Login() {
             <button type='submit'>Sign in</button>
         </form>
 
-        <p>Not a member?
-            <span className='login__register' onClick={register}>Register now</span>
+        <p>Not a member? 
+            <span className='login__register' onClick={register}> Register now</span>
         </p>
     </div>
   )

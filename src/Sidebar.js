@@ -13,8 +13,8 @@ function Sidebar(){
 
             <div className="sidebar__stats">
                 <div className="sidebar__stat">
-                    <p>Who viewed your profile</p>
-                    <p className="sidebar__statNumber">1010</p>
+                    <p>Who viewed you</p>
+                    <p className="sidebar__statNumber">1210</p>
                 </div>
 
                 <div className="sidebar__stat">

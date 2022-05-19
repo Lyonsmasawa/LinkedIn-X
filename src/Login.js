@@ -2,7 +2,9 @@ import React from 'react'
 import './Login.css'
 
 function Login() {
-
+    const loginToApp = () => {
+        
+    }
     const register = () => {}
 
   return (

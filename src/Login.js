@@ -1,8 +1,16 @@
 import React from 'react'
+import './Login.css'
 
 function Login() {
   return (
-    <div>Login</div>
+    <div className='login'>
+        <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c528.png" alt="" />
+
+        <form action="">
+            <input type="text" placeholder='Full name (required if registering)' />
+            <input type="text" />
+        </form>
+    </div>
   )
 }
 

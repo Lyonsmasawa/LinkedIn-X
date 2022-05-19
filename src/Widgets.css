@@ -21,4 +21,9 @@
     font-weight: 400;
 }
 
-.
+.widgets__article{
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+}
+

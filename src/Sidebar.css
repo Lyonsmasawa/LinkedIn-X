@@ -67,4 +67,11 @@
     color: #0a66c2 !important;
 }
 
-.sidebar__bottom {}
+.sidebar__bottom {
+    text-align: left;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 10px;
+}

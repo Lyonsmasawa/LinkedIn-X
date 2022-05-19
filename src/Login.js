@@ -21,7 +21,7 @@ function Login() {
         <form action="">
             <input type="text" placeholder='Full name (required if registering)' />
             <input type="text" placeholder='Profile picture (optional)' />
-            <input type="email" placeholder='Email' />
+            <input type="email" placeholder='Email' value={email} onChange={e => setEmail(e.target.value)}/>
             <input type="password" placeholder='Password' />
             <button type='submit' onClick={loginToApp}>Sign in</button>
         </form>

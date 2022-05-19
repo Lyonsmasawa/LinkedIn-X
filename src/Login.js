@@ -17,10 +17,10 @@ function Login() {
         auth.signInWithEmailAndPassword(email, password).then(userAuth => {
             dispatch(login({
                 email: userAuth.user.email,
-                uid: userAuth.user.uid,
+                uid: userAuth.user.uid, 
                 displayName: userAuth.user.displayName,
-                photoUrl: userAuth.user.profile,
-            }))
+                photoUrl: userAuth.user.photoUrl,
+            })).catch(error => alert(error))
         })
     }
 

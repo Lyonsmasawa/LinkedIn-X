@@ -8,7 +8,7 @@ import firebase from 'firebase/compat/app'
 
 function Feed() {
     const [posts, setPosts] = useState([]);
-    const [input, setInput] = useState('fff')
+    const [input, setInput] = useState('')
 
     useEffect(() => {
         db.collection("posts").onSnapshot(snapshot => {
@@ -49,13 +49,16 @@ function Feed() {
                 </div>
             </div>
             <div className="feed__post">
-               {posts.map((post) => (
-                    <Post name="Lyons Masawa" description="this is it" message="Lorem ipsum Lorem Ipsum Lorem Ipsum Lorem Lorem ipsum Lorem Ipsum Lorem Ipsum Lorem Lorem ipsum Lorem Ipsum Lorem Ipsum Lorem Lorem ipsum Lorem Ipsum Lorem Ipsum Lorem Lorem ipsum Lorem Ipsum Lorem Ipsum Lorem Lorem ipsum Lorem Ipsum Lorem Ipsum Lorem Lorem ipsum Lorem Ipsum Lorem Ipsum Lorem"/>
+               {posts.map(({id, data: {name, description, message, photoUrl}}) => (
+                    <Post 
+                        key={id}
+                        name={name}
+                        description={description}
+                        message={message}
+                        photoUrl={photoUrl}
+                    />
                ))}
             </div>
-
-
-
         </div>
     )
 }

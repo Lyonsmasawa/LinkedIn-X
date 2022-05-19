@@ -27,3 +27,11 @@
     padding: 10px;
 }
 
+.widgets__article:hover{
+    background-color: whitesmoke;
+}
+
+.widgets__articleLeft{
+    color: #0177b7;
+    margin-right: 5px;
+}

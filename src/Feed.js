@@ -22,7 +22,7 @@ function Feed() {
                 </div>
             </div>
             <div className="feed__post">
-                <Post />
+                <Post name="Lyons Masawa" description="this is it" message="Lorem ipsum Lorem Ipsum Lorem Ipsum Lorem"/>
             </div>
 
 

@@ -69,4 +69,4 @@ SOFTWARE.
 ## Author
 * Lyons Albert Masawa.
 
-[Go Back to the top](#Netflix-Clone)
+[Go Back to the top](#LinkedIn-Clone)

@@ -33,7 +33,7 @@ function Login() {
                     photoUrl: profile,
                 }))
             })
-        }).catch(error => alert(error.message))
+        }).catch(error => alert(error))
     }
 
   return (

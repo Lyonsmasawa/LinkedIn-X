@@ -8,8 +8,11 @@ function Post(props) {
         <div className="post__header">
             <Avatar />
             <div className="post__info">
-                <h2>Lyons Masawa</h2>
-                <p>Description</p>
+                <h2>{props.name}</h2>
+                <p>{props.description}</p>
+            </div>
+            <div className="post__body">
+                <p>{props.message}</p>
             </div>
         </div>
     </div>

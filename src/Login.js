@@ -16,10 +16,10 @@ function Login() {
 
         auth.signInWithEmailAndPassword(email, password).then(userAuth => {
             dispatch(login({
-                email: userAuth.email,
-                uid: userAuth.uid,
+                email: userAuth.user.email,
+                uid: userAuth.user.uid,
                 displayName: userAuth.user.displayName,
-                photoUrl: userAuth.profile,
+                photoUrl: userAuth.user.profile,
             }))
         })
     }

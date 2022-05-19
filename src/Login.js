@@ -6,7 +6,8 @@ function Login() {
     const [ email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
-    
+    const [profile, setProfile] = useState("");
+
     const loginToApp = (e) => {
         e.preventDefault();
     }
@@ -20,7 +21,7 @@ function Login() {
 
         <form action="">
             <input type="text" placeholder='Full name (required if registering)' value={name} onChange={e => setName(e.target.value)} />
-            <input type="text" placeholder='Profile picture (optional)' />
+            <input type="text" placeholder='Profile picture (optional)' value={profile} onChange={e => setProfile(e.target.value)} />
             <input type="email" placeholder='Email' value={email} onChange={e => setEmail(e.target.value)}/>
             <input type="password" placeholder='Password' value={password} onChange={e => setPassword(e.target.value)}/>
             <button type='submit' onClick={loginToApp}>Sign in</button>

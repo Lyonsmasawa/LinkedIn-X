@@ -1,5 +1,6 @@
 import './Feed.css'
 import { Create } from '@material-ui/icons'
+import InputOption from './InputOption'
 
 function Feed() {
     return (
@@ -13,7 +14,7 @@ function Feed() {
                     </form>
                 </div>
                 <div className="feed__inputOptions">
-                    
+                    <InputOption />
                 </div>
             </div>
         </div>

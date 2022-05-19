@@ -2,10 +2,20 @@ import './Feed.css'
 import { CalendarViewDay, Create, Image, Subscriptions, EventNote } from '@material-ui/icons'
 import InputOption from './InputOption'
 import Post from './Post'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { db } from './firebase'
 
 function Feed() {
-    const [posts, setPosts] = useState([])
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        db.collection("posts").onSnapshot(snapshot => {
+            setPosts(snapshot.docs.map(doc => ({
+                id: doc.id,
+                data: doc.data(),
+            })))
+        })
+    }, [])
 
     const sendPost = (e) => {
         e.preventDefault(); 

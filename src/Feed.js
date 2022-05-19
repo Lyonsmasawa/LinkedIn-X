@@ -1,5 +1,5 @@
 import './Feed.css'
-import { Create } from '@material-ui/icons'
+import { CalendarViewDay, Create, Image, Subscriptions, EventNote } from '@material-ui/icons'
 import InputOption from './InputOption'
 
 function Feed() {
@@ -14,7 +14,7 @@ function Feed() {
                     </form>
                 </div>
                 <div className="feed__inputOptions">
-                    <InputOption />
+                    <InputOption Icon={Image} title="Photo" color="#70B5F9"/>
                 </div>
             </div>
         </div>

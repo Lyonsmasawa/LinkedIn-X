@@ -29,7 +29,10 @@
 }
 
 .login > form > button {
-    width: 350px;
+    width: 365px;
     height: 50px;
     font-size: large;
+    color: #fff;
+    background-color: #0074b1;
+    border-radius: 5px;
 }
